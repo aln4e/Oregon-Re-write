@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Party Members</title>
+  </head>
+  <body>
+    <form action='/getSupplies' method='post'>
+      <% for(var i = 0; i < partyMembers; i++) {%>
+        <label>Party Member <%= i + 1 %> Name:</label>
+        <input type="text" name="name" />
+        <br />
+      <% } %>
+      <input type="submit" name="submit" value="submit" />
+    </form>
+  </body>
+</html>
